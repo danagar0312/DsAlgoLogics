@@ -1,8 +1,8 @@
-package com.assignments.leetcode;
+package com.assignments.leetcode.arrays;
 
 public class isAnagram {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Boolean x = isAnagram("ANAGRAM", "NAGARAM");
         System.out.println(x);
     }
@@ -10,12 +10,12 @@ public class isAnagram {
     public static boolean isAnagram(String s, String t) {
 
         int[] alphabet = new int[26];
-            for (int i = 0; i < s.length() ; i++){
-                alphabet[s.charAt(i) - 'a']++;
-            }
-            for (int i = 0; i < t.length() ; i++){
+        for (int i = 0; i < s.length(); i++) {
+            alphabet[s.charAt(i) - 'a']++;
+        }
+        for (int i = 0; i < t.length(); i++) {
             alphabet[t.charAt(i) - 'a']++;
-            }
+        }
 
 
         return true;

@@ -1,10 +1,10 @@
-package com.assignments.leetcode;
+package com.assignments.leetcode.arrays;
 
 public class reverseList {
 
-    public ListNode getReverseList(ListNode head){
+    public ListNode getReverseList(ListNode head) {
 
-        if (head == null &&head.next == null) {
+        if (head == null && head.next == null) {
             return head;
         }
 

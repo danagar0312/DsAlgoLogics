@@ -1,7 +1,7 @@
-package com.assignments.leetcode;
+package com.assignments.leetcode.arrays;
 
 public class invertTree {
-    public TreeNode getInvertedTree(TreeNode root){
+    public TreeNode getInvertedTree(TreeNode root) {
 
 //        TreeNode temp = null;
 
@@ -11,7 +11,7 @@ public class invertTree {
 
         TreeNode left = root.left;
         TreeNode right = root.right;
-        root.left  = getInvertedTree(left);
+        root.left = getInvertedTree(left);
         root.right = getInvertedTree(right);
 
         return root;
